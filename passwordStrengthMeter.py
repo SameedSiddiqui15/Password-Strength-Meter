@@ -4,7 +4,7 @@ import streamlit as st
 st.set_page_config(page_title="Password Strength Meter By Sameed Siddiqui",page_icon="🔑",layout="centered")
 
 st.markdown("""
-    <style>
+   <style>
     /* Center the main container */
     .main { 
         text-align: center; 
@@ -14,8 +14,7 @@ st.markdown("""
     /* Input Field Styling */
     .stTextInput { 
         width: 100% !important; 
-        max-width: 500px;/* Limits width on larger screens */
-        margin : auto;
+        max-width: 630px;/* Limits width on larger screens */
         padding: 12px;
         font-size: 16px;
         border: 2px solid #ccc;
@@ -42,7 +41,6 @@ st.markdown("""
         border-radius: 8px;
         transition: 0.3s ease-in-out;
         border: none;
-        margin : auto;
         cursor: pointer;
     }
 
