@@ -42,6 +42,7 @@ st.markdown("""
         border-radius: 8px;
         transition: 0.3s ease-in-out;
         border: none;
+        margin : auto;
         cursor: pointer;
     }
 
