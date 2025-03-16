@@ -14,7 +14,8 @@ st.markdown("""
     /* Input Field Styling */
     .stTextInput { 
         width: 100% !important; 
-        max-width: 500px;  /* Limits width on larger screens */
+        max-width: 500px;/* Limits width on larger screens */
+        margin : auto;
         padding: 12px;
         font-size: 16px;
         border: 2px solid #ccc;
@@ -48,6 +49,7 @@ st.markdown("""
     .stButton button:hover { 
         background: linear-gradient(135deg, #2E7D32, #4CAF50); 
         transform: scale(1.05);
+        color: white;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
