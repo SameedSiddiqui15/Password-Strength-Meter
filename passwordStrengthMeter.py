@@ -5,18 +5,67 @@ st.set_page_config(page_title="Password Strength Meter By Sameed Siddiqui",page_
 
 st.markdown("""
     <style>
-    .main { text-align: center; }
-    .stTextInput { width: 100% !important; margin: auto; }
+    /* Center the main container */
+    .main { 
+        text-align: center; 
+        padding: 20px;
+    }
+
+    /* Input Field Styling */
+    .stTextInput { 
+        width: 100% !important; 
+        max-width: 500px;  /* Limits width on larger screens */
+        padding: 12px;
+        font-size: 16px;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        transition: 0.3s ease-in-out;
+    }
+
+    /* Input Field Hover & Focus */
+    .stTextInput:hover, .stTextInput:focus {
+        border-color: #4CAF50;
+        box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+        outline: none;
+    }
+
+    /* Button Styling */
     .stButton button { 
-        width: 50%; 
-        background-color: #4CAF50; 
+        width: 60%; 
+        max-width: 300px; 
+        background: linear-gradient(135deg, #4CAF50, #2E7D32); 
         color: white; 
         font-size: 18px; 
+        font-weight: bold;
+        padding: 12px;
+        border-radius: 8px;
+        transition: 0.3s ease-in-out;
+        border: none;
+        cursor: pointer;
     }
+
+    /* Button Hover Effect */
     .stButton button:hover { 
-        background-color: #45a049; 
+        background: linear-gradient(135deg, #2E7D32, #4CAF50); 
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+        .stTextInput, .stButton button {
+            width: 80%;  /* Adjust width on smaller screens */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .stTextInput, .stButton button {
+            width: 90%;  
+            font-size: 16px; /* Reduce font size for small screens */
+        }
     }
 </style>
+
 """,unsafe_allow_html=True)
  
 st.title("Password Strength Generator By Sameed Siddiqui🔐")
